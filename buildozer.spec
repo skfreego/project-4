@@ -1,7 +1,8 @@
 [app]
 
+
 # (str) Title of your application
-title = My Application
+title = Calculator Application
 
 # (str) Package name
 package.name = myapp
@@ -37,7 +38,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,kivy, android.archs,pillow,kivymd
+requirements = python3==3.7.6,hostpython3==3.7.6,kivy,pillow
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -64,19 +65,17 @@ orientation = portrait
 # author = © Copyright Info
 
 # change the major version of python used by the app
-osx.python_version = 3.6.7
+osx.python_version = 3.7.6
 
 # Kivy version to use
-osx.kivy_version = 2.0.0
+osx.kivy_version = 1.9.1
 
-
-osx.android.archs = x86
 #
 # Android specific
 #
 
 # (bool) Indicate if the application should be fullscreen or not
-fullscreen = 1
+fullscreen = 0
 
 # (string) Presplash background color (for android toolchain)
 # Supported formats are: #RRGGBB #AARRGGBB or one of the following names:
@@ -115,7 +114,7 @@ fullscreen = 1
 #android.ndk = 23b
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
-android.ndk_api = 21
+#android.ndk_api = 21
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
 #android.private_storage = True
@@ -410,10 +409,10 @@ log_level = 2
 warn_on_root = 1
 
 # (str) Path to build artifact storage, absolute or relative to spec file
-build_dir = ./.buildozer
+# build_dir = ./.buildozer
 
 # (str) Path to build output (i.e. .apk, .aab, .ipa) storage
-bin_dir = ./bin
+# bin_dir = ./bin
 
 #    -----------------------------------------------------------------------------
 #    List as sections
