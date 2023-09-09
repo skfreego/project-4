@@ -37,7 +37,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.6.7,kivy==2.0.0, android.archs=x86,pillow,kivymd
+requirements = python3,kivy, android.archs,pillow,kivymd
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
@@ -69,6 +69,8 @@ osx.python_version = 3.6.7
 # Kivy version to use
 osx.kivy_version = 2.0.0
 
+
+osx.android.archs = x86
 #
 # Android specific
 #
@@ -113,7 +115,7 @@ fullscreen = 1
 #android.ndk = 23b
 
 # (int) Android NDK API to use. This is the minimum API your app will support, it should usually match android.minapi.
-#android.ndk_api = 21
+android.ndk_api = 21
 
 # (bool) Use --private data storage (True) or --dir public storage (False)
 #android.private_storage = True
@@ -408,10 +410,10 @@ log_level = 2
 warn_on_root = 1
 
 # (str) Path to build artifact storage, absolute or relative to spec file
-# build_dir = ./.buildozer
+build_dir = ./.buildozer
 
 # (str) Path to build output (i.e. .apk, .aab, .ipa) storage
-# bin_dir = ./bin
+bin_dir = ./bin
 
 #    -----------------------------------------------------------------------------
 #    List as sections
